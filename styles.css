@@ -115,6 +115,11 @@ body {
     opacity: 0.9;
 }
 
+.hero .description {
+    color: #FFFFFF;
+    opacity: 1;
+}
+
 .hero-buttons {
     display: flex;
     gap: 1rem;
@@ -296,7 +301,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.description {
+.project-content .description {
     color: var(--text-light);
     font-size: 0.95rem;
     margin-bottom: 1rem;
