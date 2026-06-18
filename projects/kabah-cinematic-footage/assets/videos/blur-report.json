@@ -1,0 +1,13 @@
+[
+  {
+    "input": "video-makkah 10.mp4",
+    "output": "C:/Users/SSL25/Documents/Codex/2026-05-17/buatkan-website-ka-bah-cinematic-footage/assets/videos/makkah-footage-11.mp4",
+    "frames": 2514,
+    "expected_frames": 2514,
+    "faces_blurred": 560,
+    "width": 720,
+    "height": 1280,
+    "fps": 30.0,
+    "size_bytes": 9668908
+  }
+]
