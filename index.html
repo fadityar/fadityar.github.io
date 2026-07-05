@@ -21,7 +21,7 @@
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="projects/kabah-cinematic-footage/" class="nav-link">Ka'bah</a></li>
+                    <li><a href="#kabah" class="nav-link">Ka'bah</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -213,9 +213,183 @@
                         </div>
                     </div>
                     <div class="project-links">
-                        <a href="projects/kabah-cinematic-footage/" class="btn-link"><i class="fas fa-external-link-alt"></i> View Live</a>
+                        <a href="#kabah" class="btn-link"><i class="fas fa-external-link-alt"></i> View Showcase</a>
                         <a href="https://github.com/fadityar/kabah-cinematic-footage" class="btn-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scoped Ka'bah Cinematic Showcase Section -->
+    <section id="kabah" class="kabah-theme">
+        <div class="container">
+            <div class="section-heading">
+                <p class="eyebrow">Visual Archive Showcase</p>
+                <h2>Ka'bah Cinematic Footage</h2>
+                <p>Koleksi visual sinematik Makkah, Masjidil Haram, dan Ka'bah. Menampilkan galeri foto, video portrait &amp; landscape, serta cerita visual tentang suasana spiritual di Tanah Suci.</p>
+            </div>
+
+            <!-- Intro Band -->
+            <div class="intro-band">
+                <div>
+                    <strong>Suasana Tawaf</strong>
+                    <span>Gerak jamaah mengelilingi Ka'bah dalam ritme yang khusyuk.</span>
+                </div>
+                <div>
+                    <strong>Jejak Makkah</strong>
+                    <span>Cahaya kota suci, menara, dan perjalanan menuju Masjidil Haram.</span>
+                </div>
+                <div>
+                    <strong>Detail Ka'bah</strong>
+                    <span>Kiswah, marmer, dan momen spiritual di pusat kiblat umat Islam.</span>
+                </div>
+            </div>
+
+            <!-- Photos Showcase (Frame Visual Makkah) -->
+            <div class="showcase-grid-wrapper">
+                <div class="section-heading">
+                    <p class="eyebrow">Photos</p>
+                    <h3>Frame Visual Makkah</h3>
+                </div>
+                <div class="photo-grid">
+                    <article class="photo-card wide">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kaaba_at_night.jpg?width=1200" alt="Pemandangan Ka'bah dan jamaah di Masjidil Haram" />
+                        <div>
+                            <span>Masjidil Haram</span>
+                            <h3>Central Tawaf</h3>
+                        </div>
+                    </article>
+                    <article class="photo-card">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mosqu%C3%A9e%20Masjid%20el%20Haram%20%C3%A0%20la%20Mecque.jpg?width=900" alt="Arsitektur masjid di Makkah" />
+                        <div>
+                            <span>Architecture</span>
+                            <h3>Marble Lines</h3>
+                        </div>
+                    </article>
+                    <article class="photo-card">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/%D8%A7%D9%84%D9%83%D8%B9%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%81%D8%A9%20%D9%84%D9%8A%D9%84%D8%A7%D9%8B.jpg?width=900" alt="Makkah pada malam hari" />
+                        <div>
+                            <span>Night</span>
+                            <h3>Golden Hour</h3>
+                        </div>
+                    </article>
+                    <article class="photo-card tall">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Kaaba%20during%20Hajj.jpg?width=900" alt="Jamaah berjalan saat ibadah haji atau umrah" />
+                        <div>
+                            <span>Pilgrims</span>
+                            <h3>Human Flow</h3>
+                        </div>
+                    </article>
+                    <article class="photo-card wide">
+                        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20Ka%27ba%2C%20Great%20Mosque%20of%20Mecca%2C%20Saudi%20Arabia%20%284%29.jpg?width=1200" alt="Suasana kota suci di Arab Saudi" />
+                        <div>
+                            <span>Holy Cities</span>
+                            <h3>Quiet Distance</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Videos Showcase (Cinematic Footage Playlist) -->
+            <div class="video-showcase-wrapper">
+                <div class="container">
+                    <div class="section-heading">
+                        <p class="eyebrow">Videos</p>
+                        <h3>Cinematic Footage</h3>
+                        <p>Tekan playlist di sebelah kanan untuk mengganti dan memutar video footage Makkah.</p>
+                    </div>
+
+                    <div class="video-layout">
+                        <article class="video-feature landscape">
+                            <video id="featuredVideo" controls playsinline preload="metadata" poster="assets/posters/makkah-footage-01.jpg">
+                                <source src="assets/videos/makkah-footage-01.mp4" type="video/mp4" />
+                            </video>
+                        </article>
+                        <div class="video-list">
+                            <article class="video-item active" data-orientation="landscape" data-video="assets/videos/makkah-footage-01.mp4" data-poster="assets/posters/makkah-footage-01.jpg">
+                                <span>Landscape</span>
+                                <h3>Tawaf wide scene</h3>
+                                <p>Suasana jamaah mengelilingi Ka'bah dari sudut lebar.</p>
+                            </article>
+                            <article class="video-item" data-orientation="portrait" data-video="assets/videos/makkah-footage-02.mp4" data-poster="assets/posters/makkah-footage-02.jpg">
+                                <span>Night</span>
+                                <h3>Masjidil Haram at night</h3>
+                                <p>Suasana malam dari bawah lengkungan dengan menara jam menyala.</p>
+                            </article>
+                            <article class="video-item" data-orientation="portrait" data-video="assets/videos/makkah-footage-03.mp4" data-poster="assets/posters/makkah-footage-03.jpg">
+                                <span>Gate View</span>
+                                <h3>Clock tower approach</h3>
+                                <p>Pemandangan Ka'bah dan Abraj Al Bait dari area gerbang.</p>
+                            </article>
+                            <article class="video-item" data-orientation="portrait" data-video="assets/videos/makkah-footage-04.mp4" data-poster="assets/posters/makkah-footage-04.jpg">
+                                <span>Close Frame</span>
+                                <h3>Ka'bah side detail</h3>
+                                <p>Frame dekat Ka'bah dengan detail kiswah dan jamaah di sekitarnya.</p>
+                            </article>
+                            <article class="video-item" data-orientation="portrait" data-video="assets/videos/makkah-footage-05.mp4" data-poster="assets/posters/makkah-footage-05.jpg">
+                                <span>Ka'bah View</span>
+                                <h3>Ka'bah and clock tower</h3>
+                                <p>Ka'bah dari area pelataran dengan menara jam di latar.</p>
+                            </article>
+                            <article class="video-item" data-orientation="portrait" data-video="assets/videos/makkah-footage-06.mp4" data-poster="assets/posters/makkah-footage-06.jpg">
+                                <span>Tawaf</span>
+                                <h3>Ka'bah crowd movement</h3>
+                                <p>Gerak jamaah di sekitar Ka'bah pada suasana siang.</p>
+                            </article>
+                            <article class="video-item" data-orientation="portrait" data-video="assets/videos/makkah-footage-07.mp4" data-poster="assets/posters/makkah-footage-07.jpg">
+                                <span>Gate View</span>
+                                <h3>Haram entrance frame</h3>
+                                <p>Sudut gerbang Masjidil Haram menuju area Ka'bah.</p>
+                            </article>
+                            <article class="video-item" data-orientation="portrait" data-video="assets/videos/makkah-footage-08.mp4" data-poster="assets/posters/makkah-footage-08.jpg">
+                                <span>Kiswah</span>
+                                <h3>Ka'bah wall detail</h3>
+                                <p>Detail dinding Ka'bah, kiswah, dan jamaah yang melintas.</p>
+                            </article>
+                            <article class="video-item" data-orientation="portrait" data-video="assets/videos/makkah-footage-09.mp4" data-poster="assets/posters/makkah-footage-09.jpg">
+                                <span>City Walk</span>
+                                <h3>Makkah towers walk</h3>
+                                <p>Perjalanan jamaah dengan latar menara dan gedung Makkah.</p>
+                            </article>
+                            <article class="video-item" data-orientation="portrait" data-video="assets/videos/makkah-footage-10.mp4" data-poster="assets/posters/makkah-footage-10.jpg">
+                                <span>Interior</span>
+                                <h3>Mosque interior detail</h3>
+                                <p>Detail ornamen interior, lampu gantung, dan arsitektur masjid.</p>
+                            </article>
+                            <article class="video-item" data-orientation="portrait" data-video="assets/videos/makkah-footage-11.mp4" data-poster="assets/posters/makkah-footage-11.jpg">
+                                <span>Long Take</span>
+                                <h3>Ka'bah extended scene</h3>
+                                <p>Footage lebih panjang dari area Ka'bah pada suasana siang.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Showcase (Cerita Tentang Makkah) -->
+            <div class="editorial-wrapper">
+                <div class="section-heading">
+                    <p class="eyebrow">Content</p>
+                    <h3>Cerita Tentang Makkah</h3>
+                    <p>Konten pendek untuk pelengkap caption, artikel ringan, atau pengantar video dokumenter.</p>
+                </div>
+                <div class="story-grid">
+                    <article>
+                        <span>01</span>
+                        <h3>Ka'bah sebagai arah hati</h3>
+                        <p>Ka'bah menjadi pusat kiblat umat Islam. Dalam visual cinematic, kekuatannya terasa dari gerak jamaah yang melingkar, cahaya yang jatuh di batu marmer, dan kontras kain kiswah yang tenang.</p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h3>Ritme kota Makkah</h3>
+                        <p>Makkah bergerak sepanjang hari. Dari fajar hingga malam, kota ini menyimpan ritme langkah, doa, dan perjalanan manusia dari berbagai bahasa menuju satu tempat yang sama.</p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h3>Footage untuk dokumenter</h3>
+                        <p>Ambil pendekatan visual yang lembut: establishing shot, detail tangan, langkah kaki, bayangan menara, lalu transisi ke suasana tawaf untuk membangun cerita yang terasa khusyuk.</p>
+                    </article>
                 </div>
             </div>
         </div>
@@ -292,7 +466,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="projects/kabah-cinematic-footage/">Ka'bah Cinematic Footage</a></li>
+                        <li><a href="#kabah">Ka'bah Cinematic Footage</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>

@@ -78,3 +78,28 @@ document.querySelectorAll('.project-card, .skill-item').forEach(card => {
 
 // Log
 console.log('Portfolio loaded successfully!');
+
+// Ka'bah Cinematic Showcase Video Playlist Switcher
+const featuredVideo = document.querySelector("#featuredVideo");
+const videoFeature = document.querySelector(".video-feature");
+const videoItems = document.querySelectorAll(".video-item");
+
+if (videoItems.length > 0 && featuredVideo) {
+  videoItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      videoItems.forEach((entry) => entry.classList.remove("active"));
+      item.classList.add("active");
+      videoFeature?.classList.toggle("portrait", item.dataset.orientation === "portrait");
+      videoFeature?.classList.toggle("landscape", item.dataset.orientation !== "portrait");
+      featuredVideo.pause();
+      featuredVideo.poster = item.dataset.poster;
+      const source = featuredVideo.querySelector("source");
+      if (source) {
+        source.src = item.dataset.video;
+      }
+      featuredVideo.load();
+      featuredVideo.play().catch(() => {});
+    });
+  });
+}
+

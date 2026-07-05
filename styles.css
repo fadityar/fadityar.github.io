@@ -608,3 +608,352 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* ==========================================================================
+   Ka'bah Cinematic Footage Theme & Showcase Styles (Scoped)
+   ========================================================================== */
+.kabah-theme {
+    --ink: #f8f2e8;
+    --muted: #cdbf9f;
+    --bg: #10130f;
+    --panel: #181b16;
+    --line: rgba(248, 242, 232, 0.16);
+    --gold: #d9a94a;
+    --teal: #3f8d8a;
+    --rose: #a55255;
+    --shadow: 0 22px 80px rgba(0, 0, 0, 0.42);
+    
+    background-color: var(--bg) !important;
+    color: var(--ink) !important;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding: clamp(60px, 8vw, 100px) 0;
+    overflow: hidden;
+}
+
+.kabah-theme .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.kabah-theme img,
+.kabah-theme video,
+.kabah-theme iframe {
+    display: block;
+    width: 100%;
+}
+
+.kabah-theme .eyebrow {
+    margin: 0 0 12px;
+    color: var(--gold);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.kabah-theme h2 {
+    margin-bottom: 14px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--ink);
+}
+
+.kabah-theme h3 {
+    margin-bottom: 10px;
+    font-size: 1.28rem;
+    letter-spacing: 0;
+    color: var(--ink);
+}
+
+.kabah-theme p {
+    color: var(--muted);
+    font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+    line-height: 1.7;
+}
+
+.kabah-theme .section-heading {
+    margin-bottom: 36px;
+    text-align: left;
+}
+
+.kabah-theme .section-heading p:not(.eyebrow) {
+    max-width: 660px;
+}
+
+/* Intro Band */
+.kabah-theme .intro-band {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: var(--line);
+    margin-bottom: 40px;
+}
+
+.kabah-theme .intro-band div {
+    padding: 26px clamp(20px, 4vw, 40px);
+    background: #12150f;
+}
+
+.kabah-theme .intro-band strong,
+.kabah-theme .intro-band span {
+    display: block;
+}
+
+.kabah-theme .intro-band strong {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: var(--ink);
+}
+
+.kabah-theme .intro-band span {
+    color: var(--muted);
+    line-height: 1.55;
+    font-size: 0.9rem;
+}
+
+/* Showcase Section */
+.kabah-theme .showcase-grid-wrapper {
+    margin-bottom: clamp(60px, 8vw, 100px);
+}
+
+/* Photo Grid */
+.kabah-theme .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-rows: 280px;
+    gap: 16px;
+}
+
+.kabah-theme .photo-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 260px;
+    border-radius: 8px;
+    background: var(--panel);
+    box-shadow: var(--shadow);
+}
+
+.kabah-theme .photo-card.wide {
+    grid-column: span 2;
+}
+
+.kabah-theme .photo-card.tall {
+    grid-row: span 2;
+}
+
+.kabah-theme .photo-card img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 700ms ease;
+}
+
+.kabah-theme .photo-card:hover img {
+    transform: scale(1.05);
+}
+
+.kabah-theme .photo-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.74), transparent 58%);
+}
+
+.kabah-theme .photo-card div {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    right: 20px;
+    bottom: 18px;
+}
+
+.kabah-theme .photo-card span,
+.kabah-theme .video-list span,
+.kabah-theme .story-grid span {
+    color: var(--gold);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.kabah-theme .photo-card h3 {
+    margin: 7px 0 0;
+    color: var(--ink);
+}
+
+/* Video Section */
+.kabah-theme .video-showcase-wrapper {
+    background:
+        linear-gradient(90deg, rgba(63, 141, 138, 0.18), transparent 34%),
+        #141812;
+    padding: 50px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: clamp(60px, 8vw, 100px);
+}
+
+.kabah-theme .video-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.kabah-theme .video-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #070807;
+    box-shadow: var(--shadow);
+}
+
+.kabah-theme .video-feature iframe,
+.kabah-theme .video-feature video {
+    height: auto;
+    border: 0;
+    background: #070807;
+    object-fit: contain;
+}
+
+.kabah-theme .video-feature.landscape video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+}
+
+.kabah-theme .video-feature.portrait video {
+    aspect-ratio: 9 / 16;
+    width: auto;
+    max-width: 100%;
+    height: min(72vh, 600px);
+}
+
+.kabah-theme .video-list {
+    display: grid;
+    gap: 12px;
+    max-height: 600px;
+    overflow: auto;
+    padding-right: 6px;
+}
+
+.kabah-theme .video-list article,
+.kabah-theme .story-grid article {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.045);
+}
+
+.kabah-theme .video-list article {
+    padding: 16px 20px;
+    cursor: pointer;
+    transition:
+        border-color 180ms ease,
+        background 180ms ease,
+        transform 180ms ease;
+}
+
+.kabah-theme .video-list article:hover,
+.kabah-theme .video-list article.active {
+    border-color: rgba(217, 169, 74, 0.7);
+    background: rgba(217, 169, 74, 0.09);
+    transform: translateY(-1px);
+}
+
+.kabah-theme .video-list h3 {
+    margin-top: 5px;
+    font-size: 1.1rem;
+    color: var(--ink);
+}
+
+.kabah-theme .video-list p {
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Editorial Section */
+.kabah-theme .editorial-wrapper {
+    background:
+        linear-gradient(135deg, rgba(165, 82, 85, 0.18), transparent 30%),
+        #10130f;
+}
+
+.kabah-theme .story-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.kabah-theme .story-grid article {
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.kabah-theme .story-grid h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--ink);
+}
+
+.kabah-theme .story-grid p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Custom Scrollbar for Video List */
+.kabah-theme .video-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.kabah-theme .video-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 3px;
+}
+
+.kabah-theme .video-list::-webkit-scrollbar-thumb {
+    background: rgba(248, 242, 232, 0.15);
+    border-radius: 3px;
+}
+
+.kabah-theme .video-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(217, 169, 74, 0.4);
+}
+
+/* Responsive Styles for Showcase */
+@media (max-width: 920px) {
+    .kabah-theme .intro-band,
+    .kabah-theme .video-layout,
+    .kabah-theme .story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kabah-theme .video-feature.portrait video {
+        height: min(68vh, 500px);
+    }
+
+    .kabah-theme .photo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 620px) {
+    .kabah-theme .photo-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 260px;
+    }
+
+    .kabah-theme .photo-card.wide,
+    .kabah-theme .photo-card.tall {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
+
